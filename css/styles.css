@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway:wght@400&display=swap');
+
+:root{
+    --primary-color: rgb(214, 214, 214); 
+    --secondary-color: #333;
+    --background-color: #050709;
+    --light-color: rgb(158, 158, 158);
+
+}
+
+/* ROOT */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    line-height: 1.6;
+    background-color: var(--background-color);
+    background-image: url('../assets/hero_image.png');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar {
+    width: 0.2em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px var(--background-color);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    outline: 1px solid var(--primary-color);
+    border-radius: 50px ;
+  }
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color); 
+}
+
+h1,
+h2 {
+    font-weight: 900;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+    
+}
+
+img {
+    width: 100%;
+}
+i {
+    color: var(--primary-color);
+}
+
+/* LOGO */
+.logo {
+    padding: 0px 0px;
+    position: fixed;
+}
+/* NAVBAR */
+
+.navbar {
+    background-color: transparent;
+    z-index: 10;
+}
+
+/* VERTICAL NAVBAR */
+
+.navbar-vertical {
+    padding: 0 0px;
+    position: fixed;
+    top: 10%;
+}
+.navbar-vertical ul{
+    width: 60px;
+    padding: 0px 0px;
+    margin: 0px  0;
+    line-height: 0.7;
+}
+
+.navbar-vertical li i {
+    display: block;
+    padding: 2px 18px 2px 0px;
+    border: 1.5px solid var(--primary-color);
+    border-radius: 3px;
+    width: 10px;
+    margin: auto 0px;
+}
+
+.navbar-vertical li:hover p{
+    display: contents;
+}
+.navbar-vertical p {
+    display: none;
+}
+
+.navbar-vertical li {
+    padding: 5px 0px;
+   
+}
+
+.navbar-vertical li p {
+    line-height: 1;
+    margin: 10px;
+}
+
+/* NAVBAR ICONS */
+
+.navbar-vertical .fa-user {
+    padding: 2px 16px 2px 2.5px;
+}
+.navbar-vertical .fa-info {
+    padding: 2px 12px 2px 6px;
+}
+.navbar-vertical .fa-tags {
+    padding: 2.5px 20px 1.5px 2px;
+    margin: 0px 0px 0px -2px;
+    transform: scale(0.9);
+}
+
+/* HERO SECTION */
+
+.hero-text {
+    margin: 170px 0 20px 0;
+    padding: 20px 0;
+}
+
+.heading {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    padding: 10px 10px;
+}
+.tagline {
+    margin: 10px auto;
+    width: 400px;
+    padding: 5px 10px;
+}
+.heading-text {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+.tagline-text {
+    color: var(--light-color);
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.hero-text .btn:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+/* FEATURES */
+
+
+.features-heading {
+    width: 1000px;
+    letter-spacing: 0.1rem;
+}
+
+.feature-text {
+    padding: 100px 100px;
+}
+
+.feature-text h1, p{    
+    justify-self: center;
+}
+.feature-text h1 {
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    font-size: 3em;
+}
+
+.feature-text p {
+    font-weight: 500;
+    font-size: 1.6em;
+}
+
+.container-features img {
+    width: 500px;
+    justify-self: center;
+}
+
+/* SOCIAL */
+
+.navbar-social {
+    position: fixed;
+    top: 82%;
+    right: -1%;    
+}
+
+.navbar-social li i{
+    color: #fff;
+    padding: 1px 16px 1px 2px;
+}
+
+.navbar-social .fa-facebook-f {
+    padding: 1px 14.5px 1px 4.5px;
+}
+
+.navbar-social .fa-instagram {
+    padding: 1.2px 16px 1px 2.5px;
+}
+
+.navbar-social .fa-twitter {
+    padding: 1.2px 17px 1px 2.5px;
+}
+
+.navbar-social li i{
+    color: #fff;
+    padding: 1px 16px 1px 2px;
+}
+
+.navbar-social ul {
+    width: 57px;
+}
+
+.container-social {
+    position: relative;
+    height: 120vh;
+}
+
