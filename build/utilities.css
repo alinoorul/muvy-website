@@ -1,0 +1,203 @@
+/* CONTAINER */
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+/* BUTTONS */
+ .btn {
+     padding: 0.5rem;
+     border: 2px solid var(--primary-color);
+     border-radius: 50px;
+     font-weight: 900;
+     font-size: 1.2rem;
+     color: var(--secondary-color);
+     background-color: var(--primary-color);
+     padding: 10 px;
+ }
+
+ .btn-outline {
+     background-color: var(--background-color);
+     color: var(--primary-color);
+ }
+
+ /* TEXT */
+
+ .large-text {
+     font-size: 2.5rem;
+ }
+/* GRID */
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+      
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-px-50 {
+    padding: 0px 50px;
+}
+
+/* FLEX */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.flex-vertical {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-start {
+    justify-content: baseline;
+    align-items: flex-start;
+}
+
+.flex-space-around {
+    justify-content: space-around;
+}
+.flex-space-evenly {
+    justify-content: space-evenly;
+}
+.flex-space-between {
+    justify-content: space-between;
+}
+
+/* PADDING */
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 1.5rem;
+}
+
+.p-3 {
+    padding: 2rem;
+}
+
+.p-4 {
+    padding: 3rem;
+}
+
+.p-5 {
+    padding: 4rem;
+}
+
+.px-1 {
+    padding: 0 1rem;
+}
+
+.px-2 {
+    padding: 0 1.5rem;
+}
+
+.px-3 {
+    padding: 0 2rem;
+}
+
+.px-4 {
+    padding: 0 3rem;
+}
+
+.px-5 {
+    padding: 0 4rem ;
+}
+
+.py-1 {
+    padding: 1rem 0;
+}
+
+.py-2 {
+    padding: 1.5rem 0;
+}
+
+.py-3 {
+    padding: 2rem 0;
+}
+
+.py-4 {
+    padding: 3rem 0;
+}
+
+.py-5 {
+    padding: 4rem 0;
+}
+
+/* MARGIN */
+
+.m-1 {
+    margin: 1rem;
+}
+
+.m-2 {
+margin: 1.5rem;
+}
+
+.m-3 {
+    margin: 2rem;
+}
+
+.m-4 {
+    margin: 3rem;
+}
+
+.m-5 {
+    margin: 4rem;
+}
+
+.mx-1 {
+    margin: 0 1rem;
+}
+
+.mx-2 {
+    margin: 0 1.5rem;
+}
+
+.mx-3 {
+    margin: 0 2rem;
+}
+
+.mx-4 {
+    margin: 0 3rem;
+}
+
+.mx-5 {
+    margin: 0 4rem ;
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 1.5rem 0;
+}
+
+.my-3 {
+    margin: 2rem 0;
+}
+
+.my-4 {
+    margin: 3rem 0;
+}
+
+.my-5 {
+    margin: 4rem 0;
+}
