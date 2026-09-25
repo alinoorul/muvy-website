@@ -4,14 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="utilities.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/styles.css">
     
   </head>
   <body>
-    <!-- NAVBAR LOGO -->
-    <div class="container">
+    <!-- NAVBAR LOGO + HAMBURGER -->
+    <div class="container nav-top">
         <a class="logo" href="index.html"><h1>MUVY</h1></a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+            <i class="fas fa-bars"></i>
+        </button>
     </div>
 
     <!-- NAVBAR VERTICAL -->
@@ -34,17 +37,22 @@
                 </ul>
             </nav>
         </div>
-        <!-- <div class="navbar navbar-vertical navbar-hidden container">
-            <nav>
-                <ul class="text-links flex-vertical">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="user.html">User</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>  
-        </div>       -->
-    </div>  
+    </div>
+
+    <!-- MOBILE OVERLAY MENU -->
+    <div class="mobile-overlay" id="mobileOverlay">
+        <button class="overlay-close" id="overlayClose" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <nav>
+            <ul class="overlay-nav-list">
+                <li><a href="index.html"><i class="fas fa-user"></i></a></li>
+                <li><a href="#user"><i class="fas fa-home"></i></a></li>
+                <li><a href="#pricing"><i class="fas fa-tags"></i></a></li>
+                <li><a href="#about"><i class="fas fa-info"></i></a></li>
+            </ul>
+        </nav>
+    </div>
 
     <!-- HERO SECTION -->
     <div class="hero container">
@@ -77,28 +85,28 @@
                 <h1 class="large-text">Calendar Space</h1>
                 <p>The entire film schedule in seconds with the power of AI. Mathematically proven as most efficient. Personal daily plans and calendar schedules keep you focused on what matters</p>
             </div>
-            <img src="Calender space.png" alt="">
+            <img src="./assets/Calender space.png" alt="">
         </div>
         <div class="grid container container-features my-3">
             <div class="feature-text">
                 <h1 class="large-text">Budget Space</h1>
                 <p>Allocate department budgets, easily request for funds, quickly add expenses, and get a bird's eye view of finances with transparent analysis</p>
             </div>
-            <img src="Budget space.png" alt="">
+            <img src="./assets/Budget space.png" alt="">
         </div>
         <div class="grid container container-features my-3">
             <div class="feature-text">
                 <h1 class="large-text">Chat Space</h1>
                 <p>Reach your entire time easily, collaborate with any department quickly, and stay seamlessly connected using focused channels</p>
             </div>
-            <img src="Chat space.png" alt="">
+            <img src="./assets/Chat space.png" alt="">
         </div>
         <div class="grid container container-features my-3">
             <div class="feature-text">
                 <h1 class="large-text">Doc Space</h1>
                 <p>Every document you need, always accessible (from scripts to schedules). Create and share across your crew, and never dig through filemanager again with the power of cloud</p>
             </div>
-            <img src="Doc space.png" alt="">
+            <img src="./assets/Doc space.png" alt="">
         </div>
         
         
@@ -138,7 +146,11 @@
 
         </div>
     </div>
-      
-      <script src="index.js"></script>
+
+    <footer class="site-footer">
+        <p>&copy; Muvy 2021. All Rights Reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
