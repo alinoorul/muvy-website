@@ -377,7 +377,7 @@ i {
   .hero-text {
     height: auto;
     margin: 0;
-    padding: 60px 20px 24px;
+    padding: 90px 20px 24px;
     align-items: center;
   }
 
@@ -398,6 +398,10 @@ i {
   }
 
   .tagline-text {
+    text-align: left;
+  }
+
+  .tagline-text {
     font-size: 0.95rem;
   }
 
@@ -406,8 +410,7 @@ i {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    /* 220px = where image starts; 50vw = half the near-square image height */
-    top: calc(200px + 40vw);
+    bottom: 65vw;
     margin: 0;
     white-space: nowrap;
   }
@@ -508,8 +511,9 @@ i {
     width: 28px;
     height: 28px;
     padding: 0;
-    line-height: 28px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
   }
 
@@ -526,6 +530,7 @@ i {
     display: flex;
     justify-content: center;
     padding: 20px 0;
+    border-top: none;
   }
 
   .navbar-social ul {
